@@ -1,0 +1,19 @@
+name: "TemporalNet1XL"
+license: openrail++
+urls:
+- https://huggingface.co/CiaraRowles/controlnet-temporalnet-sdxl-1.0
+description: |
+    This is TemporalNet1XL, it is a re-train of the controlnet TemporalNet1 with Stable Diffusion XL.
+config_file: |
+    parameters:
+      model: controlnet-temporalnet
+    backend: stabilityai/stable-diffusion-xl-base-1.0
+files:
+- filename: "diffusion_pytorch_model.bin"
+  uri: "https://huggingface.co/CiaraRowles/controlnet-temporalnet-sdxl-1.0/blob/main/diffusion_pytorch_model.bin"
+- filename: "config.json"
+  uri: "https://huggingface.co/CiaraRowles/controlnet-temporalnet-sdxl-1.0/blob/main/config.json"
+- filename: "diffusion_pytorch_model.safetensors"
+  uri: "https://huggingface.co/CiaraRowles/controlnet-temporalnet-sdxl-1.0/blob/main/diffusion_pytorch_model.safetensors"
+- filename: "runtemporalnetxl.py"
+  uri: "https://huggingface.co/CiaraRowles/controlnet-temporalnet-sdxl-1.0/blob/main/runtemporalnetxl.py"
