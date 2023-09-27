@@ -1,7 +1,9 @@
 name: "TemporalNet1XL"
 license: openrail++
+parameters:
+  model: "diffusion_pytorch_model.bin"
 urls:
-- https://huggingface.co/CiaraRowles/controlnet-temporalnet-sdxl-1.0
+- "https://huggingface.co/CiaraRowles/controlnet-temporalnet-sdxl-1.0"
 description: |
     This is TemporalNet1XL, it is a re-train of the controlnet TemporalNet1 with Stable Diffusion XL.
 files:
